@@ -1,8 +1,11 @@
 # IKDeformableBody
 
 This repository provides an **inverse kinematics (IK) pipeline for estimating human pose and global position** using **SMPL body models** and a **SKEL skeletal model**.
+
 Human scan data and motion capture data are used in the pipeline to perform SMPL–SKEL–based inverse kinematics.
+
 The body shape (β) of the SMPL model is estimated from human body scan data.
+
 Using the estimated shape, inverse kinematics of the SKEL model is performed based on motion capture data.
 
 ---
@@ -21,14 +24,14 @@ Using the estimated shape, inverse kinematics of the SKEL model is performed bas
 This repository contains the following components:
 ```text
 .
-├─ scan2smpl/        # Estimate SMPL shape(β), pose, and translation from scan data
-├─ smpl4marker/     # Align SMPL pose/translation using marker-attached scan data
+├─ scan2smpl/          # Estimate SMPL shape(β), pose, and translation from scan data
+├─ smpl4marker/        # Align SMPL pose/translation using marker-attached scan data
 ├─ trc2skel/           # SKEL-based inverse kinematics using motion capture (.trc)
 ├─ pyd/                # C++-based cost functions (.pyd) for CMA-ES acceleration
 │  ├─ scan2smpl/
 │  ├─ smpl4marker/
 │  └─ trc2skel/
-├─ example/          # Example data for running and testing the code
+├─ example/            # Example data for running and testing the code
 └─ README.md
 ```
 - Python 3.8 (Anaconda environment)
