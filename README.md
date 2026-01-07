@@ -62,18 +62,18 @@ The main pipeline consists of three stages.
 All optimization processes are based on **CMA-ES**, and `.pyd` files are used to accelerate computation.
 
 - `scan2smpl/`  
-  - Optimized parameters: **shape (β), pose, translation**
+  - Optimized parameters: **shape(*β*), pose(*θ*), translation(*t*)**
   - Fits the SMPL model to scan data to estimate body shape parameters
 
 - `smpl4marker/`  
-  - Optimized parameters: **pose, translation**
+  - Optimized parameters: **pose(*θ*), translation(*t*)**
   - Estimates SMPL pose parameters to **map** marker locations on the SMPL surface
 
 - `trc2skel/`  
-  - Optimized parameters: **pose, translation**
+  - Optimized parameters: **pose(*θ*), translation(*t*)**
   - Performs SKEL-based inverse kinematics using motion capture (`.trc`) data
 
-The **shape parameter (β)** estimated in `scan2smpl` is reused and fixed in the subsequent `smpl4marker` and `trc2skel` stages.
+The **shape parameter(*β*)** estimated in `scan2smpl` is reused and fixed in the subsequent `smpl4marker` and `trc2skel` stages.
 
 ---
 
