@@ -1,11 +1,8 @@
 # IKDeformableBody
 
-This repository provides an **inverse kinematics (IK) pipeline for estimating human pose and global position** using **SMPL body models** and a **SKEL skeletal model**.
-
-Human scan data and motion capture data are used in the pipeline to perform SMPL–SKEL–based inverse kinematics.
-
-The body shape (β) of the SMPL model is estimated from human body scan data.
-
+This repository provides an **inverse kinematics (IK) pipeline for estimating human pose and global position** using **SMPL body models** and a **SKEL skeletal model**.  
+Human scan data and motion capture data are used in the pipeline to perform SMPL–SKEL–based inverse kinematics.  
+The body shape (β) of the SMPL model is estimated from human body scan data.  
 Using the estimated shape, inverse kinematics of the SKEL model is performed based on motion capture data.
 
 ---
@@ -48,8 +45,12 @@ This repository contains the following components:
 
 To run this code, the **SMPL model and SKEL model must be downloaded in advance**.
 
-- SMPL model: (download link)
-- SKEL model: (download link)
+- **SMPL model** : [download link](https://smpl.is.tue.mpg.de/download.php)
+  SMPL > Downloads > Download > Download version 1.0.0 for Python 2.7 (female/male. 10 shape PCs)  
+- **SKEL model** : [download link](https://skel.is.tue.mpg.de/download.php)
+  SKEL > Downloads > SKEL and BSM models > Download Models
+- SMPL model python3 version : [GitHub link](https://github.com/DogeStudio/SMPL3)
+  Download this GitHub repository and place it inside the directory indicated in `SMPL3`.
 
 The downloaded models should be converted into a **JSON format** using the provided `XXXX.py` script before use.
 
