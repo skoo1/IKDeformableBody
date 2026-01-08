@@ -1,4 +1,5 @@
 import time
+import pickle
 import numpy as np
 from typing import Tuple
 from pathlib import Path
@@ -124,7 +125,7 @@ def main(obj_arg: str, gender: str, out_root="results", scan_root="scan_files"):
     cma_param_initpose = np.concatenate([trans0, pose0, betas0])
     cma_param_sigma0 = 0.05
     cma_options = {
-        'maxiter': 50000,
+        'maxiter': 500000,
         'bounds': [np.concatenate([[-0.1] * len(trans0), [-np.pi] * len(pose0), [-5] * len(betas0)]),  # 하한
                    np.concatenate([[0.1] * len(trans0), [np.pi] * len(pose0), [5] * len(betas0)])],  # 상한
         'verb_disp': 100,
@@ -160,7 +161,14 @@ def main(obj_arg: str, gender: str, out_root="results", scan_root="scan_files"):
     outsmpl_path = out_dir / f"{model_name}.pkl"
     outmesh_path = out_dir / f"{model_name}.obj"
     parameter_path = out_dir / f"{model_name}.txt"
-    save_model(smpl, str(outsmpl_path))
+    params = {
+        "trans": np.asarray(trans),
+        "pose":  np.asarray(pose),
+        "betas": np.asarray(betas),
+    }
+
+    with open(str(outsmpl_path), "wb") as f:
+        pickle.dump(params, f, protocol=2)  # py2/py3 호환
     save_obj(smpl, total_time, str(outmesh_path), str(parameter_path))
 
     print("Process Complete, Loss :", es.best.f)
