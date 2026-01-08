@@ -55,14 +55,16 @@ To run this code, the **SMPL and SKEL models must be downloaded in advance**.
   SMPL > Downloads > Download > Download version 1.0.0 for Python 2.7 (female/male. 10 shape PCs)    
 - **SKEL model** : [download link](https://skel.is.tue.mpg.de/download.php)  
   SKEL > Downloads > SKEL and BSM models > Download Models  
-- SMPL model python3 version : [GitHub link](https://github.com/DogeStudio/SMPL3)  
+- **SMPL model python3 version** : [GitHub link](https://github.com/DogeStudio/SMPL3)  
   Download this GitHub repository and place it inside the directory indicated in `SMPL3`.  
 
 After downloading, make sure that the following **four `.pkl` files** are placed in `pkl2json/pkl_files/`:
-- SMPL male model   (`.pkl`)  : basicmodel_m_lbs_10_207_0_v1.1.0.pkl
-- SMPL female model (`.pkl`)  : basicmodel_f_lbs_10_207_0_v1.1.0.pkl
-- SKEL male model   (`.pkl`)  : skel_male.pkl
-- SKEL female model (`.pkl`)  : skel_female.pkl
+| Model | File name |
+|------|-----------|
+| SMPL male   | `basicmodel_m_lbs_10_207_0_v1.1.0.pkl` |
+| SMPL female | `basicmodel_f_lbs_10_207_0_v1.1.0.pkl` |
+| SKEL male   | `skel_male.pkl` |
+| SKEL female | `skel_female.pkl` |
 
 Then convert them to `.json` using the following command.  
 The converted `.json` files will be saved in `pkl2json/json_files/`.
