@@ -22,7 +22,7 @@ This repository contains the following components:
 ```text
 .
 ├─ pkl2json/
-│  ├─ pkl_files/        # Input directory: SMPL / skeleton model files in .pkl format
+│  ├─ pkl_files/        # Input directory: SMPL and SKEL model files in .pkl format
 │  ├─ json_files/       # Output directory: converted model files in .json format
 │  └─ pkl2json.py       # Script for converting .pkl models to JSON-compatible format
 │
