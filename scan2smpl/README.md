@@ -60,11 +60,6 @@ Instructions for building the `.pyd` file can be found in the README within the 
   - pose
   - translation (trans)
 
-<<<<<<< HEAD
-
-How To Run
-<여기 입력 파일, 출력 파일 경로 어떻게 할 지 코드 수정해서 추가 작성>
-=======
 ---
 
 ## How To Run
@@ -131,4 +126,3 @@ Run the following command to evaluate the fitting error between the scan data an
 ```bash
 python OBJdistance.py --obj [obj_name] --gender [m/f]
 ```
->>>>>>> d70e9ab (Update scan2smpl visualization and path handling)
