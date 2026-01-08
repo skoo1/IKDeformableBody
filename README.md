@@ -49,7 +49,7 @@ This repository contains the following components:
 
 ## Model Preparation
 
-To run this code, the **SMPL model and SKEL model must be downloaded in advance**.
+To run this code, the **SMPL and SKEL models must be downloaded in advance**.
 
 - **SMPL model** : [download link](https://smpl.is.tue.mpg.de/download.php)  
   SMPL > Downloads > Download > Download version 1.0.0 for Python 2.7 (female/male. 10 shape PCs)    
@@ -58,7 +58,8 @@ To run this code, the **SMPL model and SKEL model must be downloaded in advance*
 - SMPL model python3 version : [GitHub link](https://github.com/DogeStudio/SMPL3)  
   Download this GitHub repository and place it inside the directory indicated in `SMPL3`.  
 
-After downloading, place the `.pkl` files into `pkl2json/pkl_files/`, then convert them to `.json` using:
+After downloading, place the `.pkl` files into `pkl2json/pkl_files/`, then convert them to `.json` using the following command.  
+The converted `.json` files will be saved in `pkl2json/json_files/`.
 
 ```bash
 python pkl2json/pkl2json.py
