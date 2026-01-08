@@ -27,9 +27,9 @@ This repository contains the following components:
 │  └─ pkl2json.py       # Script for converting .pkl models to JSON-compatible format
 │
 ├─ pyd/                # C++-based cost functions (.pyd) for CMA-ES acceleration
-│  ├─ scan2smpl/
-│  ├─ smpl4marker/
-│  └─ trc2skel/
+│  ├─ scan2smpl_pyd/
+│  ├─ smpl4marker_pyd/
+│  └─ trc2skel_pyd/
 │
 ├─ scan2smpl/          # Estimate SMPL shape(β), pose, and translation from scan data
 ├─ smpl4marker/        # Align SMPL pose/translation using marker-attached scan data
@@ -66,8 +66,7 @@ After downloading, make sure that the following **four `.pkl` files** are placed
 | SKEL male   | `skel_male.pkl` |
 | SKEL female | `skel_female.pkl` |
 
-Then convert them to `.json` using the following command.  
-The converted `.json` files will be saved in `pkl2json/json_files/`.
+Then convert them to `.json` using the following command. The converted `.json` files will be saved in `pkl2json/json_files/`.
 
 ```bash
 python pkl2json/pkl2json.py
