@@ -162,7 +162,7 @@ python OBJdistance.py --obj S011_Scanner.obj --gender m
 
 ---
 
-###SMPL Vertex Index (XYZ Coordinates)
+### SMPL Vertex Index (XYZ Coordinates)
 Run the following command to compute and export SMPL vertex XYZ coordinates for a given subject.:
 
 ```bash
