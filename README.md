@@ -21,13 +21,16 @@ Using the estimated shape, inverse kinematics of the SKEL model is performed bas
 This repository contains the following components:
 ```text
 .
-├─ pkl2json/           # Convert SMPL and SKEL model files from .pkl to .json
-│  ├─ json_fiels/      # Stores converted .json files (output)
-│  ├─ pkl_files/       # Contains source .pkl model files (SMPL, SKEL)
+├─ pkl2json/
+│  ├─ pkl_files/        # Input directory: SMPL / skeleton model files in .pkl format
+│  ├─ json_files/       # Output directory: converted model files in .json format
+│  └─ pkl2json.py       # Script for converting .pkl models to JSON-compatible format
+│
 ├─ pyd/                # C++-based cost functions (.pyd) for CMA-ES acceleration
 │  ├─ scan2smpl/
 │  ├─ smpl4marker/
 │  └─ trc2skel/
+│
 ├─ scan2smpl/          # Estimate SMPL shape(β), pose, and translation from scan data
 ├─ smpl4marker/        # Align SMPL pose/translation using marker-attached scan data
 ├─ trc2skel/           # SKEL-based inverse kinematics using motion capture (.trc)
