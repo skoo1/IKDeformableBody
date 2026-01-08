@@ -21,17 +21,17 @@ Using the estimated shape, inverse kinematics of the SKEL model is performed bas
 This repository contains the following components:
 ```text
 .
-├─ pkl2json/
-│  ├─ pkl_files/        # Input directory: SMPL and SKEL model files in .pkl format
-│  ├─ json_files/       # Output directory: converted model files in .json format
-│  └─ pkl2json.py       # Script for converting .pkl models to JSON-compatible format
+├─ pkl2json/                # Convert .pkl models to JSON format
+│  ├─ pkl_files/            
+│  ├─ json_files/           
+│  └─ pkl2json.py           
 │
-├─ pyd/                # C++-based cost functions (.pyd) for CMA-ES acceleration
+├─ pyd/                     # C++-based cost functions (.pyd) for CMA-ES acceleration
 │  ├─ scan2smpl_pyd/
 │  ├─ smpl4marker_pyd/
 │  └─ trc2skel_pyd/
 │
-├─ scan2smpl/          # Estimate SMPL shape(β), pose, and translation from scan data
+├─ scan2smpl/               # Estimate SMPL shape(β), pose, and translation from scan data
 │  ├─ SMPL3/
 │  ├─ scan_files/
 │  ├─ results/
