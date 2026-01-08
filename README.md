@@ -27,9 +27,9 @@ This repository contains the following components:
 │  └─ pkl2json.py       # Script for converting .pkl models to JSON-compatible format
 │
 ├─ pyd/                # C++-based cost functions (.pyd) for CMA-ES acceleration
-│  ├─ scan2smpl/
-│  ├─ smpl4marker/
-│  └─ trc2skel/
+│  ├─ scan2smpl_pyd/
+│  ├─ smpl4marker_pyd/
+│  └─ trc2skel_pyd/
 │
 ├─ scan2smpl/          # Estimate SMPL shape(β), pose, and translation from scan data
 ├─ smpl4marker/        # Align SMPL pose/translation using marker-attached scan data
