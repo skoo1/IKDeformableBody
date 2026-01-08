@@ -73,7 +73,7 @@ def get_smpl_model_path(gender: str) -> str:
 def save_obj(smpl, total_time, outmesh_path, parameter_path) :
     with open(outmesh_path, 'w') as fp:
         for v in smpl.r:
-            fp.write( 'v %f %f %f\n' % ( v[0], v[1], v[2]) )
+            fp.write( 'v %f %f %f\n' % (v[0], v[1], v[2]) )
 
         for f in smpl.f+1:
             fp.write( 'f %d %d %d\n' %  (f[0], f[1], f[2]) )
@@ -122,7 +122,7 @@ def main(obj_arg: str, gender: str, out_root="results", scan_root="scan_files"):
     pose0 = np.zeros(72)
     betas0 = np.zeros(10)
     cma_param_initpose = np.concatenate([trans0, pose0, betas0])
-    cma_param_sigma0 = 0.1
+    cma_param_sigma0 = 0.05
     cma_options = {
         'maxiter': 50000,
         'bounds': [np.concatenate([[-0.1] * len(trans0), [-np.pi] * len(pose0), [-5] * len(betas0)]),  # 하한
