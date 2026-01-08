@@ -111,6 +111,11 @@ Run the scan-to-SMPL fitting using the following command:
 cd IKDeformableBody/scan2smpl
 python scan2smpl.py --obj [obj_name] --gender [m/f]
 ```
+> example
+```bash
+python scan2smpl.py --obj S011_Scanner.obj --gender m
+```
+
 ---
 
 ### Arguments
@@ -126,4 +131,8 @@ Run the following command to evaluate the fitting error between the scan data an
 
 ```bash
 python OBJdistance.py --obj [obj_name] --gender [m/f]
+```
+> example
+```bash
+python OBJdistance.py --obj S011_Scanner.obj --gender m
 ```
