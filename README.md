@@ -58,7 +58,13 @@ To run this code, the **SMPL and SKEL models must be downloaded in advance**.
 - SMPL model python3 version : [GitHub link](https://github.com/DogeStudio/SMPL3)  
   Download this GitHub repository and place it inside the directory indicated in `SMPL3`.  
 
-After downloading, place the **four `.pkl` files** into `pkl2json/pkl_files/`, then convert them to `.json` using the following command.  
+After downloading, make sure that the following **four `.pkl` files** are placed in `pkl2json/pkl_files/`:
+- SMPL male model   (`.pkl`)  : basicmodel_m_lbs_10_207_0_v1.1.0.pkl
+- SMPL female model (`.pkl`)  : basicmodel_f_lbs_10_207_0_v1.1.0.pkl
+- SKEL male model   (`.pkl`)  : skel_male.pkl
+- SKEL female model (`.pkl`)  : skel_female.pkl
+
+Then convert them to `.json` using the following command.  
 The converted `.json` files will be saved in `pkl2json/json_files/`.
 
 ```bash
