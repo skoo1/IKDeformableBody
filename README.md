@@ -43,7 +43,7 @@ This repository contains the following components:
 │  ├─ scan2smpl_female.cp38-win_amd64.pyd
 │  ├─ scan2smpl_male.cp38-win_amd64.pyd
 │  ├─ RaisimGymVecEnv.py
-│  ├─ **scan2smpl.py**
+│  ├─ scan2smpl.py
 │  └─ OBJdistance.py
 │
 ├─ smpl4marker/        # Align SMPL pose/translation using marker-attached scan data
