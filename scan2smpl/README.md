@@ -51,7 +51,8 @@ Instructions for building the `.pyd` file can be found in the README within the 
 ## Input and Output
 
 ### Input
-- Human body scan data (`.obj`, `.ply`, `.stl`)       # meter unit
+- Human body scan data (`.obj`)
+  > Note: The scan data must be provided in meter units (vertex coordinates).
 - SMPL model files
 
 ### Output
