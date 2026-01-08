@@ -32,6 +32,20 @@ This repository contains the following components:
 │  └─ trc2skel_pyd/
 │
 ├─ scan2smpl/          # Estimate SMPL shape(β), pose, and translation from scan data
+│  ├─ SMPL3/
+│  ├─ scan_files/
+│  ├─ results/
+│  ├─ basicmodel_f_lbs_10_207_0_v1.1.0.json
+│  ├─ basicmodel_f_lbs_10_207_0_v1.1.0.pkl
+│  ├─ basicmodel_m_lbs_10_207_0_v1.1.0.json
+│  ├─ basicmodel_m_lbs_10_207_0_v1.1.0.pkl
+│  ├─ cfg.yaml
+│  ├─ scan2smpl_female.cp38-win_amd64.pyd
+│  ├─ scan2smpl_male.cp38-win_amd64.pyd
+│  ├─ RaisimGymVecEnv.py
+│  ├─ **scan2smpl.py**
+│  └─ OBJdistance.py
+│
 ├─ smpl4marker/        # Align SMPL pose/translation using marker-attached scan data
 ├─ trc2skel/           # SKEL-based inverse kinematics using motion capture (.trc)
 ├─ example/            # Example data for running and testing the code
