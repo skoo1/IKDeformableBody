@@ -52,7 +52,7 @@ To run this code, the **SMPL model and SKEL model must be downloaded in advance*
 - SMPL model python3 version : [GitHub link](https://github.com/DogeStudio/SMPL3)  
   Download this GitHub repository and place it inside the directory indicated in `SMPL3`.  
 
-The downloaded models should be converted into a **JSON format** using the provided `XXXX.py` script before use.
+The downloaded models should be converted into a **JSON format** using the provided `pkl2json.py` script before use.
 
 ---
 
