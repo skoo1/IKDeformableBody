@@ -145,7 +145,7 @@ Arguments
 
 - `--obj` : Name of the input scan OBJ file (with file extension or subject name)
 - `--gender` : Gender of the SMPL model (-m : male, -f : female)
-- `--betas` : betas obtained scan2smpl stage
+- `--betas` : Betas obtained scan2smpl stage
 
 ---
 
