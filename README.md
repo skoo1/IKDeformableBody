@@ -75,14 +75,14 @@ This repository contains the following components:
 │  └─ trc2skel.py
 │
 ├─ examples/            # Example data for running and testing the code
-│  ├─ S011_Marker.obj
-│  ├─ S011_markerset.yaml
-│  ├─ S011_Scanner.obj
-│  ├─ S011_walking01.trc
-│  ├─ S015_Marker.obj
-│  ├─ S015_markerset.yaml
-│  ├─ S015_Scanner.obj
-│  └─ S015_walking01.trc
+│  ├─ S011_Marker.obj            # Using smpl4marker stage
+│  ├─ S011_markerset.yaml        # Using trc2skel stage
+│  ├─ S011_Scanner.obj           # Using scan2smpl stage
+│  ├─ S011_walking01.trc         # Using trc2skel stage
+│  ├─ S015_Marker.obj            # Using smpl4marker stage
+│  ├─ S015_markerset.yaml        # Using trc2skel stage
+│  ├─ S015_Scanner.obj           # Using scan2smpl stage
+│  └─ S015_walking01.trc         # Using trc2skel stage
 │
 └─ README.md
 ```
