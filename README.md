@@ -101,7 +101,7 @@ This repository contains the following components:
 To run this code, the **SMPL and SKEL models must be downloaded in advance**.
 
 - **SMPL model** : [download link](https://smpl.is.tue.mpg.de/download.php)  
-  SMPL > Downloads > Download > Download version 1.0.0 for Python 2.7 (female/male. 10 shape PCs)    
+  SMPL > Downloads > Download > Download version 1.1.0 for Python 2.7 (female/male/neutral, 300 shape PCs)
 - **SKEL model** : [download link](https://skel.is.tue.mpg.de/download.php)  
   SKEL > Downloads > SKEL and BSM models > Download Models  
 - **SMPL model python3 version** : [GitHub link](https://github.com/DogeStudio/SMPL3)  
