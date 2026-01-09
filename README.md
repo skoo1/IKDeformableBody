@@ -120,6 +120,7 @@ Then convert them to `.json` using the following command. The converted `.json` 
 ```bash
 python pkl2json/pkl2json.py
 ```
+> For each stage, the required `.pkl` files and the converted `.json` files are stored in the corresponding folder.
 
 ---
 
