@@ -12,7 +12,7 @@ Using the estimated shape, inverse kinematics of the SKEL model is performed bas
 - **Estimation of SMPL shape parameters (β)** from human scan data
 - **Preprocessing for estimating marker locations on the SMPL mesh** via SMPL pose and translation optimization using marker-attached scan data
 - **SKEL-based inverse kinematics** using motion capture data
-- Example datasets for testing and validation (`example/`)
+- Example datasets for testing and validation (`examples/`)
 
 ---
 
@@ -63,13 +63,13 @@ This repository contains the following components:
 │  └─ index_visual.py
 │
 ├─ trc2skel/           # SKEL-based inverse kinematics using motion capture (.trc)
-├─ example/            # Example data for running and testing the code
+├─ examples/            # Example data for running and testing the code
 └─ README.md
 ```
 - Python 3.8 (Anaconda environment)
 - Code for utilizing SMPL shape parameters (β) estimated from scan-to-SMPL fitting
 - Code for computing SKEL-based inverse kinematics from motion capture data
-- Example datasets provided in the `example/` directory
+- Example datasets provided in the `examples/` directory
 
 > **Note**  
 > Due to licensing restrictions, SMPL and SKEL model files are **not included** in this repository and must be downloaded separately by the user.
@@ -127,4 +127,4 @@ The **shape parameter(*β*)** estimated in `scan2smpl` is reused and fixed in th
 ## Notes
 
 - This repository is provided for **research and experimental purposes**.
-- The `example/` folder provides sample data and directory structure.
+- The `examples/` folder provides sample data and directory structure.
