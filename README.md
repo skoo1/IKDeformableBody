@@ -100,11 +100,11 @@ This repository contains the following components:
 
 To run this code, the **SMPL and SKEL models must be downloaded in advance**.
 
+  > **Important**: This project requires the correct model. If you use the wrong model, it may not run properly or may produce incorrect results.
 - **SMPL model** : [download link](https://smpl.is.tue.mpg.de/download.php)  
   SMPL > Downloads > Download > Download version 1.1.0 for Python 2.7 (female/male/neutral, 300 shape PCs)
 - **SKEL model** : [download link](https://skel.is.tue.mpg.de/download.php)  
   SKEL > Downloads > SKEL and BSM models > Download Models  
-  > **Important**: This project requires the correct model. If you use the wrong model, it may not run properly or may produce incorrect results.
 - **SMPL model python3 version** : [GitHub link](https://github.com/DogeStudio/SMPL3)  
   Download this GitHub repository and place it inside the directory indicated in `SMPL3`.  
   > The `SMPL3` directory location is specified in the *Repository Structure* section above.
