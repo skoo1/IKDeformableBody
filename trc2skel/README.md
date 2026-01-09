@@ -49,8 +49,6 @@ Instructions for building the `.pyd` file can be found in the README within the 
 
 ---
 
-## 입력 및 출력
-
 ## Input and Output
 
 ### Input
