@@ -149,3 +149,17 @@ Arguments
 - `--markerset` : Path to the marker set corresponding to the SMPL model (`.yaml`)
 - `--start-frame` : Number of start frame
 - `--end-frame` : Number of end frame
+
+---
+
+### Convert SKEL to Kinematics (.csv)
+
+Run the following command to convert the SKEL parameter file (`.pkl`) into a kinematics CSV file :
+
+```bash
+python skel2kinematics.py --subject [subject_name]
+```
+> example
+```bash
+python skel2kinematics.py --subject S011
+```
