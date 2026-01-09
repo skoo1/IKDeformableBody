@@ -17,10 +17,14 @@ from RaisimGymVecEnv import RaisimGymVecEnv as VecEnv
 
 ########## pyd 설정 ##########
 def make_env(gender: str):
-    if gender.lower().startswith("m"):
+    g = gender.strip().lower()
+    if g in ("m", "male"):
         from scan2smpl_male import RaisimGymEnv
-    else:
+    elif g in ("f", "female"):
         from scan2smpl_female import RaisimGymEnv
+    else:
+        raise ValueError(f"Invalid gender: {gender} (use m/male or f/female)")
+    
     return RaisimGymEnv
 
 ########## obj 파일 탐색 ##########
