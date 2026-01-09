@@ -144,6 +144,24 @@ The **shape parameter(*β*)** estimated in `scan2smpl` is reused and fixed in th
 
 ---
 
+## How to Run
+Because Python package versions have a significant impact on execution, this project should be run **inside an Anaconda environment**.
+You can set up the environment using the following commands:
+```bash
+conda create -n IKDeformableBody python=3.8
+conda activate IKDeformableBody
+pip install -r requirements.txt
+```
+> **Notes** : If you change the Python version, you must also rebuild the .pyd modules with the corresponding Python version.
+
+After setting up the environment, run the pipeline in the following order:
+1. `scan2smpl`
+2. `smpl4marker`
+3. `trc2skel`
+   (For detailed instructions, please refer to the `README.md` file in each corresponding folder.)
+
+---
+
 ## Notes
 
 - This repository is provided for **research and experimental purposes**.
