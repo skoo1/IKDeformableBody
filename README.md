@@ -63,7 +63,27 @@ This repository contains the following components:
 │  └─ index_visual.py
 │
 ├─ trc2skel/           # SKEL-based inverse kinematics using motion capture (.trc)
+│  ├─ markerset/
+│  ├─ trc/
+│  ├─ results/
+│  ├─ cfg.yaml
+│  ├─ RaisimGymVecEnv.py
+│  ├─ skel_female.json
+│  ├─ skel_male.json
+│  ├─ trc2skel_female.cp38-win_amd64.pyd
+│  ├─ trc2skel_male.cp38-win_amd64.pyd
+│  └─ trc2skel.py
+│
 ├─ examples/            # Example data for running and testing the code
+│  ├─ S011_Marker.obj
+│  ├─ S011_markerset.yaml
+│  ├─ S011_Scanner.obj
+│  ├─ S011_walking01.trc
+│  ├─ S015_Marker.obj
+│  ├─ S015_markerset.yaml
+│  ├─ S015_Scanner.obj
+│  └─ S015_walking01.trc
+│
 └─ README.md
 ```
 - Python 3.8 (Anaconda environment)
