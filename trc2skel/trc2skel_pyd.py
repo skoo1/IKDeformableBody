@@ -772,7 +772,7 @@ def parse_args():
     p.add_argument("--end-frame", type=int, required=True)
 
     p.add_argument("--results-dir", default="results", help="Base results dir")
-    p.add_argument("--clean-results", action="store_true", help="Clear results/{subject} before running")
+    p.add_argument("--clean-results", action="store_false", help="Clear results/{subject} before running")
 
     return p.parse_args()
 
@@ -866,6 +866,3 @@ if __name__ == '__main__':
     with open(pkl_path, 'wb') as f:
         pickle.dump(pkl_data, f)
     print(f"✅ {pkl_path} 파일에 저장 완료!")
-    
-
-    
