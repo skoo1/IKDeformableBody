@@ -123,7 +123,7 @@ Run the trc-to-SKEL fitting using the following command:
 
 ```bash
 cd IKDeformableBody/scan2smpl
-python scan2smpl.py --subject [subject] --gender [m/f] --betas ["b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"] --trc [trc_path] --markerset [markerset_path] --start_frame [start_frame_int] --end_frame [end_frame_int] 
+python trc2skel_pyd.py --subject [subject] --gender [m/f] --betas ["b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"] --trc [trc_path] --markerset [markerset_path] --start_frame [start_frame_int] --end_frame [end_frame_int] 
 ```
 > example
 ```bash
@@ -155,6 +155,11 @@ Arguments
 ### Convert SKEL to Kinematics (.csv)
 
 Run the following command to convert the SKEL parameter file (`.pkl`) into a kinematics CSV file :
+
+
+> **Note**  
+> The SKEL `.pkl` file must be located inside the corresponding subject folder  
+> (e.g., `subjects/[subject_name]/`).
 
 ```bash
 python skel2kinematics.py --subject [subject_name]
