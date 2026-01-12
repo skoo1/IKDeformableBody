@@ -120,8 +120,7 @@ To run this code, the **SMPL and SKEL models must be downloaded in advance**.
   SKEL > Downloads > SKEL and BSM models > Download Models  
 - **SMPL model python3 version** : [GitHub link](https://github.com/DogeStudio/SMPL3)  
   Download this GitHub repository and place it inside the directory indicated in `SMPL3`.  
-  > The `SMPL3` directory location is specified in the *Repository Structure* section above.
-  >
+  > The `SMPL3` directory location is specified in the *Repository Structure* section above.  
   > (i.e., `scan2smpl/SMPL3` and `smpl4marker/SMPL3`).
 
 After downloading, make sure that the following **four `.pkl` files** are placed in `pkl2json/pkl_files/`:
