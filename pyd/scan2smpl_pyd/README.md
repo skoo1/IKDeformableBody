@@ -4,8 +4,8 @@
 
 Move to the target `.pyd` project directory:
 ```bash
-cd D:\GitHub\ect\test\pyd\scan2smpl_pyd\female
-cd D:\GitHub\ect\test\pyd\scan2smpl_pyd\male
+cd IKDeformableBody\pyd\scan2smpl_pyd\female
+cd IKDeformableBody\pyd\scan2smpl_pyd\male
 ```
 
 ### Clean and build
