@@ -36,8 +36,8 @@ This repository contains the following components:
 │  │  └─ male/
 │  │
 │  └─ trc2skel_pyd/
-│      ├─ female/
-│      └─ male/
+│     ├─ female/
+│     └─ male/
 │
 ├─ scan2smpl/               # Estimate SMPL shape(β), pose, and translation from scan data
 │  ├─ SMPL3/
