@@ -840,8 +840,9 @@ if __name__ == '__main__':
 
     start_time = time.time()
     ############### MAIN CODE ###############
-    for t in range(0, end_frame - start_frame) :
-        t_trc = np.array(trc_data[t], dtype=np.float32)
+    for t in range(start_frame, end_frame + 1) :
+        t_trc = np.array(trc_data[t-1], dtype=np.float32)
+        # print(t_trc)                  # << if you want to check trc_data, remove the comment in this code
         main(t, t_trc)
     ################## END ##################
     total_time = time.time() - start_time
