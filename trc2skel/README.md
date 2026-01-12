@@ -92,7 +92,7 @@ Before running this code, make sure that the following files are located in the 
 - **Configuration / source files**
   - `cfg.yaml`
   - `RaisimGymVecEnv.py`
-  - `scan2smpl.py`.py`
+  - `scan2smpl.py`
 
 - **Cost function pyd files**
   - `trc2skel_female.cp38-win_amd64.pyd`
@@ -158,8 +158,7 @@ Run the following command to convert the SKEL parameter file (`.pkl`) into a kin
 
 
 > **Note**  
-> The SKEL `.pkl` file must be located inside the corresponding subject folder  
-> (e.g., `subjects/[subject_name]/`).
+> The SKEL `.pkl` file must be located inside the corresponding subject folder (e.g., `subjects/[subject_name]/`).
 
 ```bash
 python skel2kinematics.py --subject [subject_name]
