@@ -28,8 +28,16 @@ This repository contains the following components:
 │
 ├─ pyd/                     # C++-based cost functions (.pyd) for CMA-ES acceleration
 │  ├─ scan2smpl_pyd/
+│  │  ├─ female/
+│  │  └─ male/
+│  │
 │  ├─ smpl4marker_pyd/
+│  │  ├─ female/
+│  │  └─ male/
+│  │
 │  └─ trc2skel_pyd/
+│       ├─ female/
+│       └─ male/
 │
 ├─ scan2smpl/               # Estimate SMPL shape(β), pose, and translation from scan data
 │  ├─ SMPL3/
