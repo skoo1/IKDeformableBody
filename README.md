@@ -40,6 +40,7 @@ This repository contains the following components:
 │     └─ male/
 │
 ├─ scan2smpl/               # Estimate SMPL shape(β), pose, and translation from scan data
+│  ├─ README.md
 │  ├─ SMPL3/
 │  ├─ scan_files/
 │  ├─ results/
@@ -55,6 +56,7 @@ This repository contains the following components:
 │  └─ OBJdistance.py
 │
 ├─ smpl4marker/        # Align SMPL pose/translation using marker-attached scan data
+│  ├─ README.md
 │  ├─ SMPL3/
 │  ├─ scan_files/
 │  ├─ results/
@@ -71,6 +73,7 @@ This repository contains the following components:
 │  └─ index_visual.py
 │
 ├─ trc2skel/           # SKEL-based inverse kinematics using motion capture (.trc)
+│  ├─ README.md
 │  ├─ markerset/
 │  ├─ trc/
 │  ├─ results/
@@ -106,9 +109,11 @@ This repository contains the following components:
 
 ## Model Preparation
 
+Before proceeding with model preparation, make sure the repository has been cloned (*`git clone`*) and the environment has been set up as described in **How to Run**.
+
 To run this code, the **SMPL and SKEL models must be downloaded in advance**.
 
-  > **Important**: This project requires the correct model. If you use the wrong model, it may not run properly or may produce incorrect results.
+> **Important**: This project requires the correct model. If you use the wrong model, it may not run properly or may produce incorrect results.
 - **SMPL model** : [download link](https://smpl.is.tue.mpg.de/download.php)  
   SMPL > Downloads > Download > Download version 1.1.0 for Python 2.7 (female/male/neutral, 300 shape PCs)
 - **SKEL model** : [download link](https://skel.is.tue.mpg.de/download.php)  
@@ -116,6 +121,7 @@ To run this code, the **SMPL and SKEL models must be downloaded in advance**.
 - **SMPL model python3 version** : [GitHub link](https://github.com/DogeStudio/SMPL3)  
   Download this GitHub repository and place it inside the directory indicated in `SMPL3`.  
   > The `SMPL3` directory location is specified in the *Repository Structure* section above.
+  > (i.e., `scan2smpl/SMPL3` and `smpl4marker/SMPL3`).
 
 After downloading, make sure that the following **four `.pkl` files** are placed in `pkl2json/pkl_files/`:
 | Model | File name |
@@ -157,10 +163,21 @@ The **shape parameter(*β*)** estimated in `scan2smpl` is reused and fixed in th
 
 ## How to Run
 Because Python package versions have a significant impact on execution, this project should be run **inside an Anaconda environment**.
-You can set up the environment using the following commands:
+
+First, clone the repository:
+```bash
+git clone IKDeformableBody 
+cd IKDeformableBody 
+```
+
+Then, create and activate the Anaconda environment:
 ```bash
 conda create -n IKDeformableBody python=3.8
 conda activate IKDeformableBody
+```
+
+Finally, install the required Python packages:
+```bash
 pip install -r requirements.txt
 ```
 > **Notes** : If you change the Python version, you must also rebuild the .pyd modules with the corresponding Python version.
