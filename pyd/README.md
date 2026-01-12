@@ -11,3 +11,160 @@ The following shows how to build a `.pyd` file in **Release mode** using CMake o
 (`%CONDA_PREFIX%` refers to the currently active Anaconda environment.)
 
 Details for each stage can be found in the corresponding `README.md` file located in each stage’s directory.
+
+---
+
+## Repository Structure
+
+This repository contains the following components:
+```text
+pyd/                     # C++-based cost functions (.pyd) for CMA-ES acceleration
+├─ scan2smpl_pyd/
+│  ├─ female/
+│  │  ├─ thirdParty/
+│  │  ├─ __init__.py
+│  │  ├─ basicmodel_f_lbs_10_207_0_v1.1.0.json
+│  │  ├─ build.bat
+│  │  ├─ cfg.yaml
+│  │  ├─ CMakeLists.txt
+│  │  ├─ Common.hpp
+│  │  ├─ debug_app.cpp
+│  │  ├─ Environment.hpp
+│  │  ├─ kdtree.cpp
+│  │  ├─ kdtree.hpp
+│  │  ├─ raisim_gym.cpp
+│  │  ├─ RaisimGymEnv.hpp
+│  │  ├─ RaisimGymVecEnv.py
+│  │  ├─ runner.py
+│  │  ├─ smpl.cpp
+│  │  ├─ smpl.hpp
+│  │  ├─ VectorizedEnvironment.hpp
+│  │  ├─ Yaml.cpp
+│  │  └─ Yaml.hpp
+│  │
+│  └─ male/
+│     ├─ thirdParty/
+│     ├─ __init__.py
+│     ├─ basicmodel_m_lbs_10_207_0_v1.1.0.json
+│     ├─ build.bat
+│     ├─ cfg.yaml
+│     ├─ CMakeLists.txt
+│     ├─ Common.hpp
+│     ├─ debug_app.cpp
+│     ├─ Environment.hpp
+│     ├─ kdtree.cpp
+│     ├─ kdtree.hpp
+│     ├─ raisim_gym.cpp
+│     ├─ RaisimGymEnv.hpp
+│     ├─ RaisimGymVecEnv.py
+│     ├─ runner.py
+│     ├─ smpl.cpp
+│     ├─ smpl.hpp
+│     ├─ VectorizedEnvironment.hpp
+│     ├─ Yaml.cpp
+│     └─ Yaml.hpp
+│
+├─ smpl4marker_pyd/
+│  ├─ female/
+│  │  ├─ thirdParty/
+│  │  ├─ __init__.py
+│  │  ├─ basicmodel_f_lbs_10_207_0_v1.1.0.json
+│  │  ├─ build.bat
+│  │  ├─ cfg.yaml
+│  │  ├─ CMakeLists.txt
+│  │  ├─ Common.hpp
+│  │  ├─ debug_app.cpp
+│  │  ├─ Environment.hpp
+│  │  ├─ kdtree.cpp
+│  │  ├─ kdtree.hpp
+│  │  ├─ raisim_gym.cpp
+│  │  ├─ RaisimGymEnv.hpp
+│  │  ├─ RaisimGymVecEnv.py
+│  │  ├─ runner.py
+│  │  ├─ smpl.cpp
+│  │  ├─ smpl.hpp
+│  │  ├─ VectorizedEnvironment.hpp
+│  │  ├─ Yaml.cpp
+│  │  └─ Yaml.hpp
+│  │
+│  └─ male/
+│     ├─ thirdParty/
+│     ├─ __init__.py
+│     ├─ basicmodel_m_lbs_10_207_0_v1.1.0.json
+│     ├─ build.bat
+│     ├─ cfg.yaml
+│     ├─ CMakeLists.txt
+│     ├─ Common.hpp
+│     ├─ debug_app.cpp
+│     ├─ Environment.hpp
+│     ├─ kdtree.cpp
+│     ├─ kdtree.hpp
+│     ├─ raisim_gym.cpp
+│     ├─ RaisimGymEnv.hpp
+│     ├─ RaisimGymVecEnv.py
+│     ├─ runner.py
+│     ├─ smpl.cpp
+│     ├─ smpl.hpp
+│     ├─ VectorizedEnvironment.hpp
+│     ├─ Yaml.cpp
+│     └─ Yaml.hpp
+│
+├─ trc2skel_pyd/
+│  ├─ female/
+│  │  ├─ thirdParty/
+│  │  ├─ __init__.py
+│  │  ├─ build.bat
+│  │  ├─ cfg.yaml
+│  │  ├─ CMakeLists.txt
+│  │  ├─ Common.hpp
+│  │  ├─ debug_app.cpp
+│  │  ├─ Environment.hpp
+│  │  ├─ joints_def.cpp
+│  │  ├─ joints_def.hpp
+│  │  ├─ kdtree.cpp
+│  │  ├─ kdtree.hpp
+│  │  ├─ osim_joints.cpp
+│  │  ├─ osim_joints.hpp
+│  │  ├─ raisim_gym.cpp
+│  │  ├─ RaisimGymEnv.hpp
+│  │  ├─ RaisimGymVecEnv.py
+│  │  ├─ runner.py
+│  │  ├─ skel.cpp
+│  │  ├─ skel.hpp
+│  │  ├─ skel_female.json
+│  │  ├─ VectorizedEnvironment.hpp
+│  │  ├─ vnormal.cpp
+│  │  ├─ vnormal.hpp
+│  │  ├─ Yaml.cpp
+│  │  └─ Yaml.hpp
+│  │
+│  └─ male/
+│     ├─ thirdParty/
+│     ├─ __init__.py
+│     ├─ build.bat
+│     ├─ cfg.yaml
+│     ├─ CMakeLists.txt
+│     ├─ Common.hpp
+│     ├─ debug_app.cpp
+│     ├─ Environment.hpp
+│     ├─ joints_def.cpp
+│     ├─ joints_def.hpp
+│     ├─ kdtree.cpp
+│     ├─ kdtree.hpp
+│     ├─ osim_joints.cpp
+│     ├─ osim_joints.hpp
+│     ├─ raisim_gym.cpp
+│     ├─ RaisimGymEnv.hpp
+│     ├─ RaisimGymVecEnv.py
+│     ├─ runner.py
+│     ├─ skel.cpp
+│     ├─ skel.hpp
+│     ├─ skel_male.json
+│     ├─ VectorizedEnvironment.hpp
+│     ├─ vnormal.cpp
+│     ├─ vnormal.hpp
+│     ├─ Yaml.cpp
+│     └─ Yaml.hpp
+│
+└─ README.md
+```
