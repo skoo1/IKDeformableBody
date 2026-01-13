@@ -166,7 +166,7 @@ Because Python package versions have a significant impact on execution, this pro
 
 First, clone the repository:
 ```bash
-https://github.com/skoo1/IKDeformableBody.git  
+git clone https://github.com/skoo1/IKDeformableBody.git  
 cd IKDeformableBody 
 ```
 
