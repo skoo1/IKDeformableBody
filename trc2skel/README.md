@@ -122,7 +122,7 @@ Before running this code, make sure that the following files are located in the 
 Run the trc-to-SKEL fitting using the following command:
 
 ```bash
-cd IKDeformableBody/scan2smpl
+cd IKDeformableBody/trc2skel
 python trc2skel_pyd.py --subject [subject] --gender [m/f] --betas ["b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"] --trc [trc_path] --markerset [markerset_path] --start_frame [start_frame_int] --end_frame [end_frame_int] 
 ```
 > example
