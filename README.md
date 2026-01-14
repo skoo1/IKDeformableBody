@@ -213,7 +213,7 @@ It can be used with **Python versions up to 3.10**, but there are important cons
 When using **Python 3.10**, additional manual steps are required (see below).
 
 
-### Notes on **`chumpy`**
+### Notes on `chumpy`
 - For **Python 3.10**, `chumpy` is **not installed automatically**.
 - You must install `chumpy` **manually from the GitHub source**.
 - Starting from **Python 3.11**, building the cost function `.pyd` files fails due to incompatibilities between Python’s C API and the bundled C++/pybind11 code.
@@ -222,7 +222,7 @@ When using **Python 3.10**, additional manual steps are required (see below).
 
 <br>
 
-### **📌Recommended Setup (Python 3.10)**
+### 📌Recommended Setup (Python 3.10)
 **1. Clone the Repository**
 ```bash
 git clone https://github.com/skoo1/IKDeformableBody.git
@@ -258,7 +258,7 @@ copy "pyd\smpl4marker_pyd\male\bin\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.p
 copy "pyd\trc2skel_pyd\male\bin\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd"
 ```
 
-**Example (Python 3.10) **
+**Example (Python 3.10)**
 ```bash
 copy "pyd\scan2smpl_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp310-win_amd64.pyd"
 copy "pyd\smpl4marker_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp310-win_amd64.pyd"
