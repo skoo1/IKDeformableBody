@@ -200,3 +200,74 @@ After setting up the environment, run the pipeline in the following order:
 
 - This repository is provided for **research and experimental purposes**.
 - The `examples/` folder provides sample data and directory structure.
+
+---
+
+## Python Version Compatibility
+
+### Supported Python Versions
+This repository was originally developed and tested with **Python 3.8**.  
+It can be used with **Python versions up to 3.10**, but there are important constraints.
+ - ✅ **Python 3.8 – 3.10**: Supported
+ - ❌ **Python 3.11 and later**: Not supported
+When using **Python 3.10**, additional manual steps are required (see below).
+
+---
+### Notes on **`chumpy`**
+- For **Python 3.10**, `chumpy` is **not installed automatically**.
+- You must install `chumpy` **manually from the GitHub source**.
+- Starting from **Python 3.11**, building the cost function `.pyd` files fails due to incompatibilities between Python’s C API and the bundled C++/pybind11 code.
+
+⚠️ **Python 3.11+ is not supported** because the `.pyd` (C++ extension) build process produces compilation errors.
+
+---
+### **Recommended Setup (Python 3.10)**
+**1. Clone the Repository**
+```bash
+git clone https://github.com/skoo1/IKDeformableBody.git
+cd IKDeformableBody
+```
+
+**2. Create and Activate a Conda Environment**
+```bash
+conda create -n IKDeformableBody python=3.10
+conda activate IKDeformableBody
+```
+
+**3. Install `chumpy` Manually**
+Before installing other dependencies, **remove `chumpy` from `requirements.txt`**.  
+Then install `chumpy` directly from its GitHub repository:
+```bash
+python -m pip install --no-build-isolation "chumpy @ git+https://github.com/mattloper/chumpy.git"
+```
+
+After that, install the remaining dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+**4. Rename the Generated `.pyd` File**
+After building, you must rename and copy the generated `.pyd` file so that it matches
+your Python version.
+
+General format:
+```bash
+copy "pyd\scan2smpl_pyd\male\bin\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd"
+copy "pyd\smpl4marker_pyd\male\bin\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd"
+copy "pyd\trc2skel_pyd\male\bin\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd"
+```
+
+**Example (Python 3.10) **
+```bash
+copy "pyd\scan2smpl_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp310-win_amd64.pyd"
+copy "pyd\smpl4marker_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp310-win_amd64.pyd"
+copy "pyd\trc2skel_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp310-win_amd64.pyd"
+```
+Make sure the `cpXXX` tag matches your Python version exactly.
+
+---
+### Summary
+- This project must use **Python ≤ 3.10**
+- `chumpy` must be **installed manually** for Python 3.10
+- Python 3.11+ is **not supported** due to C++/pybind11 build errors
+- The generated `.pyd` file must be renamed to match the Python version
