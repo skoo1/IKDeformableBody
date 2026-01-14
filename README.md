@@ -162,6 +162,9 @@ The **shape parameter(*β*)** estimated in `scan2smpl` is reused and fixed in th
 ---
 
 ## How to Run
+> **Tested Environment**  
+> This repository has been tested on **Windows 10** and **Windows 11** (verified on January 14, 2026).
+
 Because Python package versions have a significant impact on execution, this project should be run **inside an Anaconda environment**.
 
 First, clone the repository:
@@ -169,6 +172,9 @@ First, clone the repository:
 git clone https://github.com/skoo1/IKDeformableBody.git  
 cd IKDeformableBody 
 ```
+> **Note**  
+> When using an outdated version of Git, a warning may be issued during the cloning process, and the checkout step may not complete as expected.  
+> If this occurs, please update Git to version 2.45.2 or later, and then re-run the `git clone` command.
 
 Then, create and activate the Anaconda environment:
 ```bash
