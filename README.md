@@ -254,15 +254,15 @@ your Python version.
 General format:
 ```bash
 copy "pyd\scan2smpl_pyd\male\bin\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd"
-copy "pyd\smpl4marker_pyd\male\bin\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd"
-copy "pyd\trc2skel_pyd\male\bin\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp[PYTHON_VERSION]-win_amd64.pyd"
+copy "pyd\smpl4marker_pyd\male\bin\smpl4marker_male.cp[PYTHON_VERSION]-win_amd64.pyd" "smpl4marker\smpl4marker_male.cp[PYTHON_VERSION]-win_amd64.pyd"
+copy "pyd\trc2skel_pyd\male\bin\trc2skel_male.cp[PYTHON_VERSION]-win_amd64.pyd" "trc2skel\trc2skel_male.cp[PYTHON_VERSION]-win_amd64.pyd"
 ```
 
-**Example (Python 3.10)**
+> **Example (Python 3.10)**
 ```bash
 copy "pyd\scan2smpl_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp310-win_amd64.pyd"
-copy "pyd\smpl4marker_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp310-win_amd64.pyd"
-copy "pyd\trc2skel_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp310-win_amd64.pyd"
+copy "pyd\smpl4marker_pyd\male\bin\smpl4marker_male.cp310-win_amd64.pyd" "smpl4marker\smpl4marker_male.cp310-win_amd64.pyd"
+copy "pyd\trc2skel_pyd\male\bin\trc2skel_male.cp310-win_amd64.pyd" "trc2skel\trc2skel_male.cp310-win_amd64.pyd"
 ```
 Make sure the `cpXXX` tag matches your Python version exactly.
 
