@@ -212,7 +212,7 @@ It can be used with **Python versions up to 3.10**, but there are important cons
  - ❌ **Python 3.11 and later**: Not supported
 When using **Python 3.10**, additional manual steps are required (see below).
 
----
+
 ### Notes on **`chumpy`**
 - For **Python 3.10**, `chumpy` is **not installed automatically**.
 - You must install `chumpy` **manually from the GitHub source**.
@@ -220,7 +220,7 @@ When using **Python 3.10**, additional manual steps are required (see below).
 
 ⚠️ **Python 3.11+ is not supported** because the `.pyd` (C++ extension) build process produces compilation errors.
 
----
+
 ### **Recommended Setup (Python 3.10)**
 **1. Clone the Repository**
 ```bash
@@ -265,7 +265,7 @@ copy "pyd\trc2skel_pyd\male\bin\scan2smpl_male.cp310-win_amd64.pyd" "scan2smpl\s
 ```
 Make sure the `cpXXX` tag matches your Python version exactly.
 
----
+
 ### Summary
 - This project must use **Python ≤ 3.10**
 - `chumpy` must be **installed manually** for Python 3.10
