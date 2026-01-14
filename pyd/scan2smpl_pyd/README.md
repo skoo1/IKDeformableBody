@@ -28,9 +28,11 @@ cmake --build . --config Release
 > This ensures that the old binary is removed before copying the newly built `.pyd` file.
 
 ```bash
-del "IKDeformableBody\scan2smpl\scan2smpl_female.cp38-win_amd64.pyd"
-copy "IKDeformableBody\pyd\scan2smpl_pyd\female\bin\scan2smpl_female.cp38-win_amd64.pyd" "IKDeformableBody\scan2smpl\scan2smpl_female.cp38-win_amd64.pyd"
+cd IKDeformableBody
+del "scan2smpl\scan2smpl_female.cp38-win_amd64.pyd"
+copy "pyd\scan2smpl_pyd\female\bin\scan2smpl_female.cp38-win_amd64.pyd" "scan2smpl\scan2smpl_female.cp38-win_amd64.pyd"
 
-del "IKDeformableBody\scan2smpl\scan2smpl_male.cp38-win_amd64.pyd"
-copy "IKDeformableBody\pyd\scan2smpl_pyd\male\bin\scan2smpl_male.cp38-win_amd64.pyd" "IKDeformableBody\scan2smpl\scan2smpl_male.cp38-win_amd64.pyd"
+cd IKDeformableBody
+del "scan2smpl\scan2smpl_male.cp38-win_amd64.pyd"
+copy "pyd\scan2smpl_pyd\male\bin\scan2smpl_male.cp38-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp38-win_amd64.pyd"
 ```

@@ -28,10 +28,11 @@ cmake --build . --config Release
 > This ensures that the old binary is removed before copying the newly built `.pyd` file.
 
 ```bash
+cd IKDeformableBody
+del "trc2skel\trc2skel_female.cp38-win_amd64.pyd"
+copy "pyd\trc2skel_pyd\female\bin\trc2skel_female.cp38-win_amd64.pyd" "trc2skel\trc2skel_female.cp38-win_amd64.pyd"
 
-del "IKDeformableBody\trc2skel\trc2skel_female.cp38-win_amd64.pyd"
-copy "IKDeformableBody\pyd\trc2skel_pyd\female\bin\trc2skel_female.cp38-win_amd64.pyd" "IKDeformableBody\trc2skel\trc2skel_female.cp38-win_amd64.pyd"
-
-del "IKDeformableBody\trc2skel\trc2skel_male.cp38-win_amd64.pyd"
-copy "IKDeformableBody\pyd\trc2skel_pyd\male\bin\trc2skel_male.cp38-win_amd64.pyd" "IKDeformableBody\trc2skel\trc2skel_male.cp38-win_amd64.pyd"
+cd IKDeformableBody
+del "trc2skel\trc2skel_male.cp38-win_amd64.pyd"
+copy "pyd\trc2skel_pyd\male\bin\trc2skel_male.cp38-win_amd64.pyd" "trc2skel\trc2skel_male.cp38-win_amd64.pyd"
 ```

@@ -28,9 +28,11 @@ cmake --build . --config Release
 > This ensures that the old binary is removed before copying the newly built `.pyd` file.
 
 ```bash
-del "IKDeformableBody\smpl4marker\smpl4marker_female.cp38-win_amd64.pyd"
-copy "IKDeformableBody\pyd\smpl4marker_pyd\female\bin\smpl4marker_female.cp38-win_amd64.pyd" "IKDeformableBody\smpl4marker\smpl4marker_female.cp38-win_amd64.pyd"
+cd IKDeformableBody
+del "smpl4marker\smpl4marker_female.cp38-win_amd64.pyd"
+copy "pyd\smpl4marker_pyd\female\bin\smpl4marker_female.cp38-win_amd64.pyd" "smpl4marker\smpl4marker_female.cp38-win_amd64.pyd"
 
-del "IKDeformableBody\smpl4marker_pyd\smpl4marker_male.cp38-win_amd64.pyd"
-copy "IKDeformableBody\pyd\smpl4marker_pyd\male\bin\smpl4marker_male.cp38-win_amd64.pyd" "IKDeformableBody\smpl4marker\smpl4marker_male.cp38-win_amd64.pyd"
+cd IKDeformableBody
+del "smpl4marker_pyd\smpl4marker_male.cp38-win_amd64.pyd"
+copy "pyd\smpl4marker_pyd\male\bin\smpl4marker_male.cp38-win_amd64.pyd" "smpl4marker\smpl4marker_male.cp38-win_amd64.pyd"
 ```
