@@ -221,7 +221,7 @@ When using **Python 3.10**, additional manual steps are required (see below).
 ⚠️ **Python 3.11+ is not supported** because the `.pyd` (C++ extension) build process produces compilation errors.
 
 
-### **Recommended Setup (Python 3.10)**
+### **📌Recommended Setup (Python 3.10)**
 **1. Clone the Repository**
 ```bash
 git clone https://github.com/skoo1/IKDeformableBody.git
