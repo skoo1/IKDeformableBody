@@ -37,6 +37,6 @@ del "smpl4marker_pyd\smpl4marker_male.cp38-win_amd64.pyd"
 copy "pyd\smpl4marker_pyd\male\bin\smpl4marker_male.cp38-win_amd64.pyd" "smpl4marker\smpl4marker_male.cp38-win_amd64.pyd"
 ```
 
-> If you are using Python 3.10, please follow the instructions in step 4, 
-> “Rename the Generated .pyd File,” from the section below when executing the `copy` command:
+> If you are using Python 3.10, please follow the instructions in step 4,  
+> “Rename the Generated .pyd File,” from the section below when executing the `copy` command:  
 > [python 3.10 version](https://github.com/skoo1/IKDeformableBody/tree/main?tab=readme-ov-file#recommended-setup-python-310)

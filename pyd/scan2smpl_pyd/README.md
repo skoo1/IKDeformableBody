@@ -37,6 +37,6 @@ del "scan2smpl\scan2smpl_male.cp38-win_amd64.pyd"
 copy "pyd\scan2smpl_pyd\male\bin\scan2smpl_male.cp38-win_amd64.pyd" "scan2smpl\scan2smpl_male.cp38-win_amd64.pyd"
 ```
 
-> If you are using Python 3.10, please follow the instructions in step 4, 
-> “Rename the Generated .pyd File,” from the section below when executing the `copy` command:
+> If you are using Python 3.10, please follow the instructions in step 4,  
+> “Rename the Generated .pyd File,” from the section below when executing the `copy` command:  
 > [python 3.10 version](https://github.com/skoo1/IKDeformableBody/tree/main?tab=readme-ov-file#recommended-setup-python-310)
