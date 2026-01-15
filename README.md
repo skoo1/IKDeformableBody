@@ -227,19 +227,19 @@ When using **Python 3.10**, additional manual steps are required (see below).
 <br>
 
 ### 📌Recommended Setup (Python 3.10)
-**1. Clone the Repository**
+**1. Clone the Repository**  
 ```bash
 git clone https://github.com/skoo1/IKDeformableBody.git
 cd IKDeformableBody
 ```
 
-**2. Create and Activate a Conda Environment**
+**2. Create and Activate a Conda Environment**  
 ```bash
 conda create -n IKDeformableBody python=3.10
 conda activate IKDeformableBody
 ```
 
-**3. Install `chumpy` Manually**
+**3. Install `chumpy` Manually**  
 Before installing other dependencies, **remove `chumpy` from `requirements.txt`**.  
 Then install `chumpy` directly from its GitHub repository:
 ```bash
@@ -251,7 +251,7 @@ After that, install the remaining dependencies:
 pip install -r requirements.txt
 ```
 
-**4. Rename the Generated `.pyd` File**
+**4. Rename the Generated `.pyd` File**  
 After building, you must rename and copy the generated `.pyd` file so that it matches
 your Python version.
 
