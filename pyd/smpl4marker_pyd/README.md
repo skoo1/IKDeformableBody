@@ -17,7 +17,7 @@ rmdir /s /q bin
 rmdir /s /q build
 mkdir build
 cd build
-cmake .. -DPYTHON_EXECUTABLE=%CONDA_PREFIX%\python.exe
+cmake .. -DPYTHON_EXECUTABLE=%CONDA_PREFIX%\python.exe -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 cmake --build . --config Release
 ```
 
