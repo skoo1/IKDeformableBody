@@ -164,7 +164,7 @@ The **shape parameter(*β*)** estimated in `scan2smpl` is reused and fixed in th
 
 ## How to Run
 > **Tested Environment**  
-> This repository has been tested on **Windows 10** and **Windows 11** (verified on January 14, 2026).
+> This repository has been tested on **Windows 10** and **Windows 11** (tested on January 16, 2026).
 
 Because Python package versions have a significant impact on execution, this project should be run **inside an Anaconda environment**.
 
@@ -239,8 +239,8 @@ conda create -n IKDeformableBody python=3.10
 conda activate IKDeformableBody
 ```
 
-**3. Install `chumpy` Manually**  
-Before installing other dependencies, **remove `chumpy` from `requirements.txt`**.  
+**3. Install `chumpy` Manually and Python packages**  
+Before installing other dependencies, **remove `chumpy` from `requirements.txt`**. (tested on January 16, 2026)  
 Then install `chumpy` directly from its GitHub repository:
 ```bash
 python -m pip install --no-build-isolation "chumpy @ git+https://github.com/mattloper/chumpy.git"
